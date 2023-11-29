@@ -1,0 +1,26 @@
+@import 'null';
+@import 'vars';
+@import 'font';
+@import 'block/page';
+@import 'block/parallax';
+@import 'block/header';
+@import 'block/header-contacts';
+@import 'block/hero';
+@import 'block/hero-info';
+@import 'block/hero-info-mob';
+@import 'block/footer';
+
+body {
+	background: var(--main-bg);
+	color: var(--light-text);
+	font-family: inter;
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.container {
+	width: 100%;
+	max-width: 1170px;
+	padding: 0 15px;
+	margin: 0 auto;
+}

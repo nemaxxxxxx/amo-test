@@ -1,0 +1,27 @@
+.parallax {
+	z-index: -9;
+	&__item {
+		position: absolute;
+	}
+
+	&__glow-purple {
+		top: -65%;
+		left: 20%;
+	}
+	&__glow-red {
+		top: -20%;
+		left: -40%;
+	}
+	&__ball-1 {
+		left: 30%;
+		top: 20%;
+	}
+	&__ball-2 {
+		top: -2%;
+		left: 63%;
+	}
+	&__ball-3 {
+		top: 400px;
+		left: 58%;
+	}
+}

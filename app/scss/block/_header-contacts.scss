@@ -1,0 +1,18 @@
+.header-contacts {
+	display: flex;
+	justify-content: space-between;
+	&__tel {
+		margin-right: 47px;
+	}
+	&__tel:hover {
+		opacity: 0.6;
+	}
+	&__social {
+		display: flex;
+		justify-content: space-between;
+		gap: 30px;
+	}
+	&__social-link:hover {
+		opacity: 0.6;
+	}
+}

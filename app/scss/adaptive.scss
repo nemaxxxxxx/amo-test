@@ -1,0 +1,153 @@
+@media (max-width: 1100px) {
+	.header {
+		&__logo {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 1000px) {
+	.footer {
+		padding: 45px 0 60px 0;
+		background: var(--black);
+		&__top {
+			display: grid;
+			gap: 0;
+			margin-bottom: 20px;
+		}
+		&__section:last-child {
+			text-align: left;
+		}
+		&__section-list {
+			gap: 0 70px;
+		}
+		&__section {
+			margin-bottom: 30px;
+		}
+		&__section-item {
+			margin-bottom: 10px;
+			white-space: normal;
+		}
+		&__social-list {
+			justify-content: flex-start;
+		}
+		&__bottom {
+			justify-content: flex-start;
+			text-align: left;
+		}
+	}
+}
+
+@media (max-width: 880px) {
+	.header-contacts {
+		&__tel {
+			display: none;
+		}
+	}
+	.hero {
+		&__title {
+			font-size: 40px;
+		}
+	}
+	.hero-info {
+		display: none;
+	}
+	.hero-info-mob {
+		display: block;
+	}
+}
+
+@media (max-width: 700px) {
+	.header-contacts {
+		&__social {
+			display: none;
+		}
+	}
+	.hero-info-mob {
+		&__get-info-btn {
+			display: none;
+		}
+	}
+
+}
+@media (max-width: 600px) {
+	.header {
+		padding: 20px 0;
+		font-size: 12px;
+		font-family: inter;
+		font-weight: 500;
+		text-transform: uppercase;
+		background: var(--black);
+		&__menu {
+			overflow-x: scroll;
+		}
+	}
+	.header-contacts {
+		&__social {
+			display: none;
+		}
+	}
+	.hero {
+		padding-top: 60px;
+		&__inner {
+			flex-direction: column;
+		}
+	}
+	.hero-info-mob {
+		display: block;
+		width: 100%;
+		&__title {
+			text-align: left;
+		}
+		&__cases {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+		}
+		&__case {
+			justify-self: start;
+		}
+	}
+	.footer {
+		&__section-list {
+			font-size: 13px;
+		}
+	}
+}
+
+@media (max-width: 400px) {
+	.hero {
+		padding-top: 40px;
+		&__inner {
+			gap: 45px;
+		}
+		&__title {
+			font-size: 30px;
+			margin-bottom: 15px;
+		}
+	}
+	.hero-info-mob {
+		&__title {
+			font-weight: 700;
+			text-transform: none;
+			letter-spacing: normal;
+			margin-bottom: 20px;
+		}
+		&__title-span {
+			font-weight: 500;
+		}
+		&__cases {
+			gap: 14px 10px;
+			margin-bottom: 55px;
+		}
+		&__case {
+			font-size: 13px;
+			font-weight: 400;
+			letter-spacing: 0.65px;
+			margin-bottom: 0;
+		}
+	}
+	.parallax {
+		filter: blur(10px);
+	}
+}
+

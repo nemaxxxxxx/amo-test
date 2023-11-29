@@ -1,0 +1,39 @@
+.header {
+	padding-top: 46px;
+	&__nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: top;
+	}
+	&__logo {
+		font-family: Montserrat;
+		font-size: 10px;
+		font-weight: 300;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+	&__menu {
+		display: flex;
+		gap: 30px;
+	}
+	&__menu-link {
+		position: relative;
+	}
+	&__menu-link::before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 1px;
+		left: 0;
+		bottom: -4px;
+		background: var(--light-text);
+		transform: scaleX(0);
+		transform-origin: right;
+		transition: transform 0.2s;
+	}
+	&__menu-link:hover::before {
+		transform: scaleX(1);
+		transform-origin: left;
+	}
+}

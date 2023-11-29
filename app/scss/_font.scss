@@ -1,0 +1,19 @@
+@mixin fontFace($family, $url, $name, $weight) {
+	@font-face {
+		font-family: '#{$family}';
+		src: url('#{$url}/#{$name}.woff2') format('woff2'),
+			url('#{$url}/#{$name}.woff') format('woff');
+		font-weight: #{$weight};
+		font-style: normal;
+	}
+}
+
+
+@include fontFace('Inter', '../font', 'Inter-Regular', 400);
+@include fontFace('Inter', '../font', 'Inter-Medium', 500);
+@include fontFace('Inter', '../font', 'Inter-Bold', 700);
+@include fontFace('Inter', '../font', 'Inter-Black', 900);
+
+
+@include fontFace('Montserrat', '../font', 'Montserrat-Light', 300);
+@include fontFace('Montserrat', '../font', 'Montserrat-Regular', 400);

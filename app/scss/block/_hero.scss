@@ -1,0 +1,30 @@
+.hero {
+	padding-top: 90px;
+	font-size: 48px;
+	font-family: inter;
+	font-weight: 400;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		gap: 40px;
+	}
+	&__main-text {
+		max-width: 362px;
+	}
+	&__main-text-gradient {
+ 		text-transform: uppercase;
+  		background: linear-gradient(to right, #FBAF44, #FF5D6B);
+  		-webkit-background-clip: text;
+  		-webkit-text-fill-color: transparent;
+		font-weight: 900;
+	}
+	&__title {
+		margin-bottom: 30px;
+	}
+	&__subtitle {
+		font-family: Montserrat;
+		font-size: 18px;
+		font-weight: 400;
+		width: 275px;
+	}
+}
